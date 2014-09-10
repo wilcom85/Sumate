@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,100,200,400' rel='stylesheet' type='text/css'>
+ 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sumate</title>
+</head>
+<body>
+	<figure id="banner">
+		<img id='logo' src="img/logo_header.png"/>		
+	</figure>
+	<div id="content-media" class="forms_fixed">
+		<form id='form-media' onsubmit='return false;' action='' method='post' enctype='multipart/form-data'>
+			 <select name="type_format" id="type_format"  width="260" style="width: 260px">
+				<option id="inkind" value="1" selected="selected">Foto</option>
+				<option value="2">Video</option>
+				<option value="3">Audio</option>
+				<option value="4">Texto</option>
+			</select>
+			<br>
+			<textarea id="ta_message" placeholder="Mensaje" width="255" style="width: 255px; resize: none;"></textarea>
+			<br>
+    		<button id='upload_button' class='button blue'>Seleccionar archivo</button>
+			<br>
+			<button id="btn_backmenune" class='button medium purple'>Volver</button>
+			<button id='btn_save' class='button medium green'>Donar</button>
+		</form>
+	</div>
+	<footer id='footer'>
+		<div style='margin: 0 auto'>
+			<img src="img/footer.png">	
+		</div>			
+	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>	
+	<script type="text/javascript" src="js/libs/Namespace.js"></script>	
+	<script type="text/javascript" src="js/libs/util.js"></script>	
+	<script type="text/javascript" src="js/app/models/mediaModel.js"></script>			
+	<script type="text/javascript" src="js/app/views/media.js"></script>
+	<script type="text/javascript" src="js/app/controllers/mediaController.js"></script>	
+	<script type="text/javascript" src="js/libs/AjaxUpload.2.0.min.js"></script>	
+	<script type="text/javascript"> 	
+		media_events = new  com.inventakus.media_events();
+	</script>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

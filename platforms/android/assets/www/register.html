@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,100,200,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sumate</title>
+</head>
+<body>
+	<figure id="banner">
+		<img id='logo' src="img/logo_header.png"/>		
+	</figure>
+	<div id="content-register" class="forms_fixed">
+		<form id='form-register' onsubmit='return false;'>
+			<input type='text' name='fullName' id='fullName' placeholder='Digita tu nombre completo' required/> 
+			<br>
+			<input type='text' name='email' id='email' placeholder='Digita tu direccción de correo' required/> 
+			<br>
+			<input type='password' name='pass1' id='pass1' placeholder='Digita tu contraseña' required/> 
+			<br>
+			<input type='text' name='cellphone' id='cellphone' placeholder='Número de celular' required/> 
+			<br>
+			<button id="btn_backlogin" class='button medium purple'>Volver</button>
+			<button id='btn_register' class='button medium green'>Registrarme</button>
+		</form>
+	</div>
+	<div id="register-message" class="forms_fixed">
+		<form id='form-message' onsubmit='return false;'>
+			<h3 align="center" style="color:white;">Se ha registrado correctamente</h3>
+			</br>
+			<button id="btn_backlogin_m" class='button large purple'>Volver</button>
+		</form>
+	</div>
+	<footer id='footer'>
+		<div style='margin: 0 auto'>
+			<img src="img/footer.png">	
+		</div>			
+	</footer>
+	<script type="text/javascript" src='js/libs/jquery-1.9.1.js' ></script>
+	<script type="text/javascript" src="js/libs/Namespace.js"></script>
+	<!--<script src="http://pajhome.org.uk/crypt/md5/2.2/md5-min.js"></script>-->
+	<script type="text/javascript" src="js/libs/util.js"></script>
+	<script type="text/javascript" src="js/app/components/managerGlobalVariables.js"></script>
+	<script type="text/javascript" src="js/app/models/userModel.js"></script>
+	<script type="text/javascript" src="js/app/controllers/registerController.js"></script>
+	<script type="text/javascript" src="js/app/views/register.js"></script>	
+	</script>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>

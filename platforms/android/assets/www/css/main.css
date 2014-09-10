@@ -1,0 +1,326 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+audio, canvas, video {
+    display: inline-block
+}
+audio: not([controls]) {
+    display: none;
+    height: 0
+}
+[hidden], template {
+    display: none
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+a {
+    background: transparent
+}
+a:focus {
+    outline: thin dotted
+}
+a:active, a:hover {
+    outline: 0
+}
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+abbr[title] {
+    border-bottom: 1px dotted
+}
+b, strong {
+    font-weight: bold
+}
+dfn {
+    font-style: italic
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+mark {
+    background: #ff0;
+    color: #000
+}
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+pre {
+    white-space: pre-wrap
+}
+q {
+    quotes: "\201C""\201D""\2018""\2019"
+}
+small {
+    font-size: 80%
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+sup {
+    top: -0.5em
+}
+sub {
+    bottom: -0.25em
+}
+img {
+    border: 0
+}
+svg: not(: root) {
+    overflow: hidden
+}
+figure {
+    margin: 0
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+legend {
+    border: 0;
+    padding: 0
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+button, input {
+    line-height: normal
+}
+button, select {
+    text-transform: none
+}
+html input[type="button"], button, input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+button[disabled], html input[disabled] {
+    cursor: default
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+input[type="search"]: : -webkit-search-cancel-button, input[type="search"]: : -webkit-search-decoration {
+    -webkit-appearance: none
+}
+button: : -moz-focus-inner, input: : -moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+.s-hidden {
+    visibility:hidden;
+    padding-right:10px;
+}
+.select {
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font:normal 11px/22px Arial, Sans-Serif;
+    color:black;
+    border:1px solid #ccc;
+}
+.styledSelect {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:white;
+    padding:0 10px;
+    font-weight:bold;
+}
+.styledSelect:after {
+    content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-color:black transparent transparent transparent;
+    position:absolute;
+    top:9px;
+    right:6px;
+}
+.styledSelect:active, .styledSelect.active {
+    background-color:#eee;
+}
+div.msg
+{
+    background-color:transparent;
+    top: 20px;
+    left:120px;
+    width: 300px;
+    font-size:10pt;
+    font-family: inherit;
+    color:#fff;
+}
+.options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:999;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #ccc;
+    background-color:white;
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.options li {
+    padding:0 6px;
+    margin:0 0;
+    padding:0 10px;
+}
+.options li:hover {
+    background-color:#39f;
+    color:white;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+* {
+    margin: 0;
+    padding: 0
+}
+a {
+    text-decoration: none;
+    border: none
+}
+body {
+    background: #c03;
+    min-height: 500px;
+}
+.button {
+    font-family: 'Raleway' !important;
+    font-weight: 300
+}
+#banner {
+    position: absolute;
+    width: 281px;
+    height: 125px;
+    left: 50%;
+    margin-left: -148px;
+    top: 100px
+}
+#banner #logo {
+    width: 281px;
+    height: 125px
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%
+}
+#footer div {
+    margin: 0 auto;
+    width: 320px
+}
+#main-menu {
+    width: 260px;
+    height: 40px;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    margin-left: -130px
+}
+#social-menu {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 315px;
+    left: 50%;
+    margin-left: -40px
+}
+#social-menu a {
+    margin-left: 3px
+}
+.forms_fixed {
+    width: 260px;
+    height: 40px;
+    position: relative;
+    top: 250px;
+    left: 50%;
+    margin-left: -130px;
+    margin-top: -30px;
+}
+.ui-datepicker {
+    font-size: 80%;
+}
+.button {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 1em
+}
+.button.medium {
+    width: 48%;
+    float: left;
+    margin-right: 5px
+}
+.button.blue {
+    background: #3b8ec3
+}
+.button.green {
+    background: #52900f
+}
+.button.orange {
+    background: #da751b
+}
+.button.purple {
+    background: #8a189b
+}
+form {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    font-size: .84em;
+    font-family: "Roboto", "Trebuchet MS", "arial"
+}
+input {
+    width: 100%;
+    border: 1px solid #dedede;
+    color: #777;
+    outline: medium none;
+    padding: 4px 7px;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 5px;
+    margin-bottom: 5px
+}
+@media screen and (min-width: 400px) {
+    #login {
+        width: 350px;
+        margin-left: -175px
+   }
+}

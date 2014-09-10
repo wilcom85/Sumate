@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,100,200,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+	<title>Sumate</title>
+</head>
+<body>
+	<figure id="banner">
+		<img id='logo' src="img/logo_header.png"/>		
+	</figure>
+	<div id="content-menu" class="forms_fixed">
+		<form id='form-menu' onsubmit='return false;'>
+			<button id='donate_money' class='button blue'>Donar dinero</button>
+			<button id='donate_nomoney' class='button green'>Donación no económica</button>
+			<button id='more_info' class='button orange'>Mayor información</button>
+			<button id='close_session' class='button purple'>Cerrar sesión</button>
+		</form>
+	</div>
+	<footer id='footer'>
+		<div style='margin: 0 auto'>
+			<img src="img/footer.png">	
+		</div>			
+	</footer>
+	<script type="text/javascript" src='js/libs/jquery-1.9.1.js' ></script>
+	<script type="text/javascript" src="js/libs/Namespace.js"></script>	
+	<script type="text/javascript" src="js/libs/util.js"></script>
+	<script type="text/javascript" src="js/app/components/Authentication.js"></script>
+	<script src="http://pajhome.org.uk/crypt/md5/2.2/md5-min.js"></script>
+	<script type="text/javascript" src="js/app/components/managerGlobalVariables.js"></script>
+	<script type="text/javascript" src="js/app/views/menu.js"></script>		
+	<script type="text/javascript">
+		var menuView = new com.inventakus.view.menuView();
+	</script>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>
